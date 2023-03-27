@@ -40,11 +40,14 @@ const ProductDetail = () => {
         <Spinner />
       ) : (
         <>
-          <img className={styles.image} src={product.image} alt={product.title} />
+          <div className="float-left">
+          <img className={styles.image} src={product.image} alt={product.title}/>
+          </div>
           <div className="flex flex-wrap my-5">
-          <div className="flex flex-col">
+          <div style={{display:'flex',flexDirection:'column',margin:'30px'}}>
           <h2 className={styles.brand}>BRAND</h2>
-          <div className={styles.rating}>
+          <h1 style={{ fontSize: '24px',fontWeight:"bold"}}>{product.title}</h1>
+          <div className={styles.rating} style={{color:'yellow'}}>
             <StarIcon className={styles.StarIcon} width="15"/>
             <StarIcon className={styles.StarIcon} width="15"/>
             <StarIcon className={styles.StarIcon} width="15"/>
@@ -53,15 +56,14 @@ const ProductDetail = () => {
           </div>
           <p className={styles.productDetailTex}>{product.description}</p>
           <hr className="flex B-3"/>
-        <div className="flex w-50">
-          <p className="flex color-yellow font-50">{product.price}</p>
-          </div>
-          <div>
+          <div style={{display:'flex',justifyContent:'space-between',margin:'15px'}}>
+          <p style={{display:'flex',fontSize:'30px',color:'yellow'}}>${product.price}</p>
+          <div className="flex">
             {findCartItem ? (
               <button onClick={handleremoveFromCart} className={styles.removeButton}>Remove from cart</button>
             ) : (
               // <div className={styles.addToCart}>
-                <button onClick={handleAddToCart} className={styles.addToCartButton} width={"20 rem"}>
+                <button onClick={handleAddToCart} className={styles.addToCartButton} >
                   {/* <ShoppingCartIcon className={styles.ShoppingCartIcon} /> */}
                   Add to Cart
                 </button>
@@ -78,6 +80,7 @@ const ProductDetail = () => {
                 </button>
               )}
             </div>
+          </div>
           </div>
           </div>
           </div>
