@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Hashmarkt/static/css/main.94299acf.css",
-    "main.js": "/Hashmarkt/static/js/main.668ff93c.js",
-    "index.html": "/Hashmarkt/index.html",
-    "main.94299acf.css.map": "/Hashmarkt/static/css/main.94299acf.css.map",
-    "main.668ff93c.js.map": "/Hashmarkt/static/js/main.668ff93c.js.map"
+    "main.css": "/Hashmarkt.github.io/static/css/main.94299acf.css",
+    "main.js": "/Hashmarkt.github.io/static/js/main.81ad873d.js",
+    "index.html": "/Hashmarkt.github.io/index.html",
+    "main.94299acf.css.map": "/Hashmarkt.github.io/static/css/main.94299acf.css.map",
+    "main.81ad873d.js.map": "/Hashmarkt.github.io/static/js/main.81ad873d.js.map"
   },
   "entrypoints": [
     "static/css/main.94299acf.css",
-    "static/js/main.668ff93c.js"
+    "static/js/main.81ad873d.js"
   ]
 }
